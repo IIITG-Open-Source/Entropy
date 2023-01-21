@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #f5c42f;
+    --text-color: #c5bbec;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--primary-color);
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 2rem;
+    padding: 8px 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.secondary-text {
+    color: var(--secondary-color);
+}
+
+.section {
+    position: relative;
+    padding: .1rem 2rem;
+}
+
+/* logo */
+.logo-image {
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-radius: 50%;
+    margin: 1em;
+    width: 5em;
+    height: 5em;
+  }
+  .logo-image img {
+    height: 5em;
+    width: 5em;
+  }
+
+/* Section Top */
+.section-top {
+    width: 40%;
+    height:100%;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.section-top h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.section-top .para {
+    position: relative;
+    right: 2rem;
+    width: 55%;
+}
+
+.para h1 {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Sectionn Stream */
+.section-stream {
+    min-height: 70rem;
+    background: url('https://wallpaperaccess.com/full/1773008.png') no-repeat center center/cover;
+    /* background-color: #000000; */
+}
+
+.section-stream h2 {
+    font-size: 3.5rem;
+}
+
+.section-stream .play {
+    width: 27%;
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+}
+
+.section-stream .content {
+    position: absolute;
+    width: 50%;
+    top: 13rem;
+    right: 7rem;
+}
+
+.section-stream .content>div,
+.section-grid>div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+/* Section  Grid */
+.section-grid {
+    background-image: url("https://wallpaperaccess.com/full/1773008.png");
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    text-align: center;
+}
+
+.section-grid p {
+    color: var(--text-color);
+}
+
+.section-grid .dot {
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+.rellax h2 a{
+    font-size: 2.2rem;
+}
+.rellax h2 {
+    font-size: 2.2rem;
+}    
+/*  Ye baad me dekhna bsdk */
+
+.rellax i{
+    font-size: 5rem;
+}
+
+.rellax h3 u{
+    font-size: 1.4rem;
+}
+ 
+
+/* Footer */
+.footer {
+    /* border-top: var(--text-color) 1px solid;
+    padding: 3rem;
+    margin-top: 2rem; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer ul li a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+.footer_list{
+    font-size: 1.5rem;
+}
+
+/* Mobile */
+@media(max-width: 70rem) {
+
+    .section-top .content,
+    .section-stream .play,
+    .section-stream .content {
+        position: static;
+        width: 100%;
+    }
+
+    .section-top {
+        min-height: 20rem;
+        padding-top: 2rem;
+    }
+
+    .section-top .content {
+        text-align: center;
+    }
+
+    .section-top .content h1 {
+        font-size: 4.5rem;
+    }
+
+    .section-stream {
+        min-height: 40rem;
+    }
+
+    .section-stream .play {
+        width: 50%;
+        display: block;
+        margin-top: 3rem auto;
+    }
+
+    .section-grid {
+        display: block;
+        margin-top: 0;
+    }
+
+    .footer ul {
+        display: block;
+    }
+}
+
+.home {
+    display: flex;
+    height: 100vh;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    /* background-color: #000000; */
+    background-image: url("https://wallpaperaccess.com/full/1773008.png");
+}
+
+
+.clearfix{
+    width: 55%;
+
+}
+
+/* Solar System Styles */
+ul.solarsystem {
+    position: relative;
+    height: 100vh;
+    list-style: none;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in;
+    overflow: hidden;
+    /* z-index: -1; */
+    left: -14%;
+}
+
+ul.solarsystem li {
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    border: .2rem solid #394057;
+    /*    opacity: 0.7;*/
+}
+
+ul.solarsystem li span {
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+ul.solarsystem li.active {
+    border-color: #aa4200;
+}
+
+ul.solarsystem li.active.sun,
+ul.solarsystem li.active span {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+ul.solarsystem li.active.sun span,
+ul.solarsystem li.active.earth .moon {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+ul.solarsystem li.sun {
+    width: 4rem;
+    height: 4rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    background: #fc3;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.22, rgb(204, 153, 0)),
+            color-stop(1, rgb(255, 219, 112)));
+    background-image: -moz-linear-gradient(center bottom,
+            rgb(204, 153, 0) 22%,
+            rgb(255, 219, 112) 100%);
+    top: 30.2rem;
+    left: 46.2rem;
+    border: none;
+    -webkit-box-shadow: 0 0 50px #c90;
+    -moz-box-shadow: 0 0 50px #c90;
+    box-shadow: 0 0 50px #c90;
+    z-index: 100;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+ul.solarsystem li.sun span {
+    width: 6rem;
+    height: 6rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    border-radius: 3rem;
+}
+
+ul.solarsystem li.mercury {
+    width: 10rem;
+    height: 10rem;
+    -webkit-border-radius: 5.2rem;
+    -moz-border-radius: 5.2rem;
+    border-radius: 5.2rem;
+    top: 27rem;
+    left: 43rem;
+    z-index: 99;
+}
+
+ul.solarsystem li.mercury span {
+    background: #b6bac5;
+    top: 1rem;
+    left: 1rem;
+}
+
+ul.solarsystem li.venus {
+    width: 16rem;
+    height: 16rem;
+    -webkit-border-radius: 8.2rem;
+    -moz-border-radius: 8.2rem;
+    border-radius: 8.2rem;
+    top: 24rem;
+    left: 40rem;
+    z-index: 98;
+}
+
+ul.solarsystem li.venus span {
+    background: #bf8639;
+    top: 11.8rem;
+    left: .5rem;
+}
+
+ul.solarsystem li.earth {
+    width: 22rem;
+    height: 22rem;
+    -webkit-border-radius: 11.2rem;
+    -moz-border-radius: 11.2rem;
+    border-radius: 11.2rem;
+    top: 21rem;
+    left: 37rem;
+    z-index: 97;
+}
+
+ul.solarsystem li.earth span {
+    background: #06c;
+    top: 5.6rem;
+    left: .5rem;
+}
+
+ul.solarsystem li.earth span.moon {
+    width: .4rem;
+    height: .4rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #ccc;
+    top: 1.2rem;
+    left: 1.2rem;
+}
+
+ul.solarsystem li.mars {
+    width: 28rem;
+    height: 28rem;
+    -webkit-border-radius: 14.2rem;
+    -moz-border-radius: 14.2rem;
+    border-radius: 14.2rem;
+    top: 18rem;
+    left: 34rem;
+    z-index: 96;
+}
+
+ul.solarsystem li.mars span {
+    background: #aa4200;
+    top: 0px;
+    left: 17.5rem;
+}
+
+ul.solarsystem li.asteroids_meteorids {
+    top: 15.5rem;
+    left: 31.5rem;
+    z-index: 1;
+    background: url(http://neography.com/experiment/circles/solarsystem/asteroids_meteorids.png) no-repeat 0 0;
+    width: 33rem;
+    height: 33rem;
+    -webkit-border-radius: 16.5rem;
+    -moz-border-radius: 16.5rem;
+    border-radius: 16.5rem;
+    border: none;
+}
+
+ul.solarsystem li.jupiter {
+    width: 34rem;
+    height: 34rem;
+    -webkit-border-radius: 17.2rem;
+    -moz-border-radius: 17.2rem;
+    border-radius: 17.2rem;
+    top: 15rem;
+    left: 31rem;
+    z-index: 95;
+}
+
+ul.solarsystem li.jupiter span {
+    background: #e0ae6f;
+    top: 6.7rem;
+    left: 2.4rem;
+}
+
+ul.solarsystem li.saturn {
+    width: 40rem;
+    height: 40rem;
+    -webkit-border-radius: 20.2rem;
+    -moz-border-radius: 20.2rem;
+    border-radius: 20.2rem;
+    top: 12rem;
+    left: 28rem;
+    z-index: 94;
+}
+
+ul.solarsystem li.saturn span {
+    background: #dfd3a9;
+    top: 2.4rem;
+    left: 30rem;
+}
+
+ul.solarsystem li.saturn span.ring {
+    width: 1.2rem;
+    height: 1.2rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid #5a4e34;
+    left: -3px;
+    top: -3px;
+    -webkit-transform: skewY(50deg);
+    -moz-transform: skewY(50deg);
+    -o-transform: skewY(50deg);
+    transform: skewY(50deg);
+}
+
+ul.solarsystem li.uranus {
+    width: 46rem;
+    height: 46rem;
+    -webkit-border-radius: 23.2rem;
+    -moz-border-radius: 23.2rem;
+    border-radius: 23.2rem;
+    top: 9rem;
+    left: 25rem;
+    z-index: 93;
+}
+
+ul.solarsystem li.uranus span {
+    background: #82b3d1;
+    top: .7rem;
+    left: 30rem;
+}
+
+ul.solarsystem li.neptune {
+    width: 52rem;
+    height: 52rem;
+    -webkit-border-radius: 26.2rem;
+    -moz-border-radius: 26.2rem;
+    border-radius: 26.2rem;
+    top: 6rem;
+    left: 22rem;
+    z-index: 92;
+}
+
+ul.solarsystem li.neptune span {
+    background: #77c2ec;
+    top: 0px;
+    left: 20rem;
+}
+
+ul.solarsystem li.pluto {
+    width: 58rem;
+    height: 58rem;
+    -webkit-border-radius: 29.2rem;
+    -moz-border-radius: 29.2rem;
+    border-radius: 29.2rem;
+    top: 3rem;
+    left: 19rem;
+    z-index: 91;
+}
+
+ul.solarsystem li.pluto span {
+    background: #7c6a5c;
+    top: 7.9rem;
+    left: 7.9rem;
+}
+
+
+/* CSS3 Animations */
+ul.solarsystem li {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: orbit;
+}
+
+ul.solarsystem li.earth span {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: moon;
+
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: moon;
+}
+
+ul.solarsystem li.mercury {
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+}
+
+ul.solarsystem li.venus {
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+}
+
+ul.solarsystem li.earth {
+    -webkit-animation-duration: 12s;
+    -moz-animation-duration: 12s;
+}
+
+ul.solarsystem li.earth span {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+}
+
+ul.solarsystem li.mars {
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+}
+
+ul.solarsystem li.asteroids_meteorids {
+    -webkit-animation-duration: 50s;
+    -moz-animation-duration: 50s;
+}
+
+ul.solarsystem li.jupiter {
+    -webkit-animation-duration: 30s;
+    -moz-animation-duration: 30s;
+}
+
+ul.solarsystem li.saturn {
+    -webkit-animation-duration: 60s;
+    -moz-animation-duration: 60s;
+}
+
+ul.solarsystem li.uranus {
+    -webkit-animation-duration: 70s;
+    -moz-animation-duration: 70s;
+}
+
+ul.solarsystem li.neptune {
+    -webkit-animation-duration: 100s;
+    -moz-animation-duration: 100s;
+}
+
+ul.solarsystem li.pluto {
+    -webkit-animation-duration: 120s;
+    -moz-animation-duration: 120s;
+}
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes moon {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes moon {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+.explain {
+    position: relative;
+    top: 35%;
+    padding: 0rem 4rem;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+
+.section-top {
+    position: relative;
+
+}
+
+.section-top .para {
+    position: relative;
+    top: 8%;
+    right: 23%;
+    font-family: "Poppins", sans-serif;
+}
+.para h2 {
+	color: #fff;
+	font-size: 9.6rem;
+    position: absolute;
+	transform: translate(50%, 50%);
+}
+
+.para h2:nth-child(1) {
+	color: transparent;
+    
+	-webkit-text-stroke: 0.5px #ffffff;
+    
+}
+.para h2:nth-child(2) {
+	color: #ffffff;
+	animation: animate 4s ease-in-out infinite;
+}
+
+.para p{
+    color:#ffffff;
+    position: absolute;
+    top:30%;
+    right:30%;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+
+.banner-image{
+    height: 5rem;
+    display: flex;
+    align-items: left;
+}
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 1400px) {
+    .clearfix{
+        width: 0%;
+    }
+
+    .section-top{
+        width: 100%;
+
+    }
+    .para h2{
+        font-size: 7rem;
+        margin: 1rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+  }

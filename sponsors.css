@@ -1,0 +1,474 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+  background-image: url("https://media0.giphy.com/media/jaOXKCxtBPLieRLI0c/200w.gif?cid=6c09b952mh9nldz19ivvpk92se5x02dwoa1ikv4kp6p43611&rid=200w.gif&ct=g");
+  text-align: center;
+}
+
+.header {
+  display: flex;
+}
+
+.header__title {
+  font-family: "Style Script", cursive;
+  font-size: 2.8rem;
+  color:white;
+}
+/* logo */
+.logo{
+  height: 5rem;
+  display: flex;
+  align-items: left;
+  
+}
+.logo-image {
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-radius: 50%;
+  margin: 1em;
+  width: 5em;
+  height: 5em;
+}
+.logo-image img {
+  height: 5em;
+  width: 5em;
+}
+
+/*CSS For navbar */
+.navbar-area {
+  background: rgba(0,0,0,.6);
+  border-bottom: 1px solid #000;
+  background: transparent;
+  width: 100%;
+}
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.site-logo {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-navbar ul li {
+  /* font-family: 'Montserrat', sans-serif; */
+  margin: 0 2rem;
+}
+.site-navbar ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.site-navbar ul li a:hover {
+  background: rgba(255,255,255,.1);
+}
+/* navbar regular css end */
+
+
+/* nav-toggler css start */
+.nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span, 
+.nav-toggler span:before, 
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: .3s;
+}
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+/* nav-toggler css start */
+
+
+/* intro-area css start */
+.intro-area {
+  height: calc(100vh - 61px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.intro-area h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+.intro-area p {
+  font-size: 18px;
+}
+/* intro-area css end */
+
+
+/* mobile breakpoint start */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  /* navbar css for mobile start */
+  .nav-toggler{
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #444;
+    background-color: rgba(0,0,0,.75);
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+  .site-navbar ul li a:hover {
+    background-color: rgba(255,255,255,.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+  .intro-area h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }  
+  /* navbar css for mobile end */
+}
+/* mobile breakpoint end */
+
+/* heading */
+
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+
+svg {
+    display: block;
+    font: 8em 'Montserrat';
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    letter-spacing: .09em;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #fff;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #fff;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #fff;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #fff;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #fff;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+/* subheading */
+
+.subheading{
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+    padding: 1em;
+    margin: 1em;
+}
+
+/* associate sponser */
+.associate-sponser{
+    text-align: center;
+    font-size: 1.8em;
+}
+
+
+
+/* slideshow */
+.mySlides img{
+  width: 35rem;
+}
+
+img {
+    vertical-align: middle;
+    height: auto;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    margin: .8em 30em 11em 30em;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: relative;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  /* .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  
+
+  
+  
+  /* grid for associate sponsors images */
+  
+  .grid-container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 1em;
+      margin: 0.8em 10em 6em 10em;
+    }
+    
+    .grid-item>img{
+        width: 100%;
+    }
+    
+    .grid-item{
+        padding: 1em;
+        gap: 5em;
+    }
+
+    /* Footer */
+.footer {
+  /* border-top: var(--text-color) 1px solid;
+  padding: 3rem;
+  margin-top: 2rem; */
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  margin-top: 1rem;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.footer_list{
+  font-size: 1.5rem;
+}
+
+.banner-image{
+  height: 5rem;
+  display: flex;
+  align-items: left;
+}
+/* footer ends here */
+
+
+    @media only screen and (max-width: 1400px) {
+      .container {
+          position: relative;
+          margin: 3em 5em;
+        }
+
+        .heading{
+            font-size: 2em;
+        }
+  
+        .subheading{
+          font-size: 1.5em;
+        }
+    }
+
+
+    @media only screen and (max-width: 1200px) {
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 1em;
+            margin: 0.8em 10em 6em 10em;
+      }
+
+      .logo-image {
+        margin: 1em;
+        width: 3em;
+        height: 3em;
+      }
+      .logo-image img {
+        height: 3em;
+        width: 3em;
+      }
+    }
+
+
+    @media only screen and (max-width: 900px) {
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto;
+            padding: 1em;
+            margin: 0.8em 3em 6em 3em;
+      }
+      .mySlides img{
+        width:19em;
+      }
+    }
+
+
+    @media(max-width: 70rem){
+      .footer ul {
+        display: block;
+    }
+    }
