@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Events Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./events.css">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./events.css">
+  <title>Events</title>
 </head>
 <body>
-
+  <!-- logo -->
   <header class="header">
     <div class="navbar-area">
       <!-- <div class="container"> -->
         <nav class="site-navbar">
           <!-- site logo -->
           <div class="logo-image">
-            <img class="logo" src="Logo.png" />
+            <img class="logo" src="./Logo.png" />
           </div>
           <!-- site menu/nav -->
           <ul>
             <li><a href="./landingpage.html">home</a></li>
-            <li><a href="./Sponsors.html">Sponsor</a></li>
+            <li><a href="./Sponsors.html">Sponsors</a></li>
             <li><a href="./gallery.html">Gallery</a></li>
             <li><a href="./Teams.html">Team</a></li>
           </ul>
@@ -33,20 +33,124 @@
     </div>
     <!-- navbar-area end -->
   </header>
-<!-- partial:index.partial.html -->
-<div class="container">
-  <div class="wrapper">
-    <div class="content">
-      <div class="item">
-        <!-- Place your content here to have it be centered vertically and horizontally  -->
-        <h1>COMING SOON</h1>
-        <p>This website is under construction.</p>
-      </div>
-    </div>
+
+  <!-- heading -->
+
+  <div class="container_main">
+    <svg viewBox="0 0 1920 200">
+      <symbol id="s-text">
+        <text text-anchor="middle" x="52%" y="60%">EVENTS</text>
+        <text text-anchor="middle" x="52%" y="60%">EVENTS</text>
+      </symbol>
+
+      <g class="g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+      </g>
+    </svg>
+    <p>Entropy 2023 is here! Finally after 2 years, the much awaited tech fest of IIIT Guwahati returns with a supernova bang,<br> bringing to you a constellation of exciting events in order to <br>expand your knowledge beyond imagination</p>
   </div>
-</div>
-<!-- partial -->
-  <!-- script tag for navbar  -->
+
+
+
+  <!-- events section -->
+
+  <div class="wrapper">
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <h1>Treasure Hunt</h1>
+            <div class="front" style="background-image: url(./techhunt.jpg)">
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Alert, fellow technophiles! Wanna hunt down the last error? Let’s hunt’n loop, guys!</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSclOnuuHr45M7QP8J-9j3txofA9UX4_W-lNGHN6Y5qoKbcynA/viewform">Register here!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <h1>Valorant</h1>
+            <div class="front" style="background-image: url(./valorant.jpg)">
+              
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>In the cosmos of Ryenas, crush the jods of gaming and ace your way to triumph!</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCIH2baQxCXXJF_kQx2SSCnr6A9k0ykgMHi0PmFgxg1GGL8A/viewform">Register here!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <h1>Coding Competition</h1>
+            <div class="front" style="background-image: url(./codethrill.jpg)">
+              
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Does your algo have what it takes? Well, think again; ‘cause your rival is willing to lock horns with you!</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeh_LU0WOc7UkzIIUdoQwgB8qRy3G04CYWzwVI2bqfA_1knQ/viewform">Register here!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <h1>Tech Quiz</h1>
+            <div class="front" style="background-image: url(./techmaster.png)">
+              
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Input logic, compilation tragic,output magic!</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5MHUlcCoMc77HmzfmEvK7ya0aZ6Wk_4m1DtVdpbgGAXrGxA/viewform">Register here!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+  
+      </div>
+   </div>
+
+  <!-- events section ends -->
+
+
+  <div class="contact">
+    <img src="contact.png" alt="">
+  </div>
+
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="banner-image">
+      <img src="Banner.png" alt="" class="banner" />
+    </div>
+    <ul>
+      <li>
+        <a class="footer_list" href="https://www.iiitg.ac.in/contact.php"
+          >Contact Us</a
+        >
+      </li>
+      <li>
+        <a class="footer_list" href="Teams.html">About Us</a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- footer ends -->
+
   <script src="navbar.js"></script>
+  
 </body>
 </html>
